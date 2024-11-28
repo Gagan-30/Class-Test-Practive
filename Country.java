@@ -40,7 +40,7 @@ public class Country {
         Country country = new Country("Japan", "Tokyo", 126300000);
 
         // Print out the country information using the toString() method
-        System.out.println(country.name.toString() + "\n");
+        System.out.println(country.toString() + "\n");
 
         // Accessing individual data fields using getter methods
         System.out.println("Country Name: " + country.getName());
@@ -48,4 +48,3 @@ public class Country {
         System.out.println("Population: " + country.getPopulation());
     }
 }
-

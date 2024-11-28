@@ -14,7 +14,6 @@ public class q5 {
 				System.out.println(line);
 			}
 		}
-
 		scan.close();
 	}
 }

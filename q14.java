@@ -8,7 +8,6 @@ public class q14 {
         // Prompt the user for two numbers
         System.out.print("Enter the first number: ");
         int a = scanner.nextInt();
-
         System.out.print("Enter the second number: ");
         int b = scanner.nextInt();
 
@@ -31,4 +30,3 @@ public class q14 {
         return a; // When b becomes 0, a is the GCD
     }
 }
-

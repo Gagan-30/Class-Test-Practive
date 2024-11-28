@@ -49,10 +49,10 @@ public class Playlist {
         playlist.addCD("The Dark Side of the Moon", "Pink Floyd", 24.99);
 
         // Print out the playlist using the toString() method
-        System.out.println("Playlist:\n" + playlist);
+        System.out.println("Playlist:\n" + playlist.toString());
 
         // Print the total price of the playlist
-        System.out.println("Total Price: $" + playlist.totalPrice());
+        System.out.println("Total Price: £" + playlist.totalPrice());
     }
 }
 

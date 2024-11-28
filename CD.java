@@ -46,7 +46,7 @@ public class CD {
     public String toString() {
         return "CD Title: " + title + "\n" +
                "Artist: " + artist + "\n" +
-               "Price: $" + price;
+               "Price: £" + price;
     }
 
     // Main method to test the CD class

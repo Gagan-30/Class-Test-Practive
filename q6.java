@@ -1,8 +1,8 @@
-import java.io.File;
 import java.util.Scanner;
+import java.io.File;
 
 public class q6 {
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 		String fileName = "words.txt";
 		File file = new File(fileName);
 

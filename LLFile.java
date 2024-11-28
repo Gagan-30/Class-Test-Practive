@@ -11,9 +11,9 @@ public class LLFile {
         // Read the file line by line
         Scanner scanner = new Scanner(file);
         while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
+            String word = scanner.nextLine();
             // Insert each line at the head of the list
-            head = new LLNode(line, head);
+            head = new LLNode(word, head);
         }
         scanner.close(); // Close the scanner
 
@@ -25,4 +25,3 @@ public class LLFile {
         }
     }
 }
-

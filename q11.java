@@ -1,31 +1,25 @@
-public class q11 {
-    public static void main(String[] args) {
-        System.out.println("First 8 Fibonacci numbers:");
-        for (int i = 0; i < 8; i++) {
-            System.out.println("Fib(" + i + ") = " + fib(i));
-        }
 
-        // Count calls for fib(4)
-        System.out.println("\nNumber of calls to fib(4): " + countFibCalls(4));
+public class q11 {
+    // Counter to track the number of times fib is called
+    private static int callCount = 0;
+
+    public static void main(String[] args) {
+        // Reset the counter
+        callCount = 0;
+        int n = 4; // Find the 4th Fibonacci number
+        System.out.println("Fib(" + n + ") = " + fib(n));
+        System.out.println("fib was called " + callCount + " times for fib(" + n + ")");
     }
 
     // Recursive method to calculate the Fibonacci number
     public static int fib(int n) {
+        callCount++; // Increment the counter each time the method is called
         if (n == 0) {
             return 0;
         } else if (n == 1) {
             return 1;
         } else {
             return fib(n - 1) + fib(n - 2);
-        }
-    }
-
-    // Method to count how many times fib() is called for a given n
-    public static int countFibCalls(int n) {
-        if (n == 0 || n == 1) {
-            return 1; // Base case is called exactly once
-        } else {
-            return 1 + countFibCalls(n - 1) + countFibCalls(n - 2); // Each call counts itself + its two sub-calls
         }
     }
 }
